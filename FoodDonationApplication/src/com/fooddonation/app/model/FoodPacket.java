@@ -6,6 +6,17 @@ public abstract class FoodPacket {
 	int size;
 	int quantity;
 	String foodType;
+	boolean nutsIncluded;
+	
+	
+
+	public boolean isNutsIncluded() {
+		return nutsIncluded;
+	}
+
+	public void setNutsIncluded(boolean nutsIncluded) {
+		this.nutsIncluded = nutsIncluded;
+	}
 
 	public String getType() {
 		return type;
@@ -50,8 +61,12 @@ public abstract class FoodPacket {
 		builder.append(quantity);
 		builder.append(", foodType=");
 		builder.append(foodType);
+		builder.append(", nutsIncluded=");
+		builder.append(nutsIncluded);
 		builder.append("]");
 		return builder.toString();
 	}
+
+	
 
 }

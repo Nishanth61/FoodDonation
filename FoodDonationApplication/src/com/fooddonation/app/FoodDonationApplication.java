@@ -19,13 +19,13 @@ public class FoodDonationApplication {
 
 		FoodPacket[] foodPackets = new FoodPacket[6];
 
-		FoodPacket vegBreakFastPacket = FoodPacketFactory.getFoodPacket("VEG", 1, 1, "Breakfast");
-		FoodPacket vegLunch = FoodPacketFactory.getFoodPacket("VEG", 1, 1, "Lunch");
-		FoodPacket vegDinner = FoodPacketFactory.getFoodPacket("VEG", 1, 1, "Dinner");
+		FoodPacket vegBreakFastPacket = FoodPacketFactory.getFoodPacket("VEG", 1, 1, "Breakfast", true);
+		FoodPacket vegLunch = FoodPacketFactory.getFoodPacket("VEG", 1, 1, "Lunch", false);
+		FoodPacket vegDinner = FoodPacketFactory.getFoodPacket("VEG", 1, 1, "Dinner", false);
 
-		FoodPacket nonvegBreakFastPacket = FoodPacketFactory.getFoodPacket("NON-VEG", 1, 1, "Breakfast");
-		FoodPacket nonvegLunch = FoodPacketFactory.getFoodPacket("NON-VEG", 1, 1, "Lunch");
-		FoodPacket nonvegDinner = FoodPacketFactory.getFoodPacket("NON-VEG", 1, 1, "Dinner");
+		FoodPacket nonvegBreakFastPacket = FoodPacketFactory.getFoodPacket("NON-VEG", 1, 1, "Breakfast", false);
+		FoodPacket nonvegLunch = FoodPacketFactory.getFoodPacket("NON-VEG", 1, 1, "Lunch", true);
+		FoodPacket nonvegDinner = FoodPacketFactory.getFoodPacket("NON-VEG", 1, 1, "Dinner", true);
 
 		foodPackets[0] = vegBreakFastPacket;
 		foodPackets[1] = vegLunch;
